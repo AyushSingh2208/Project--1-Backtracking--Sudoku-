@@ -1,0 +1,138 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: blanchedalmond;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#name {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sudoku_grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 540px;
+    margin: 20px auto;
+    border: 4px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sudoku_grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.box1 {
+    background-color: #1520A6;
+    border: 2px solid rgba(225, 217, 217, 0.6);
+}
+
+.box1:hover {
+    background-color: #131a1a;
+    color: white;
+}
+
+.box2 {
+    background-color: #78332b;
+    border: 2px solid white;
+}
+
+.box2:hover {
+    background-color: rgb(41, 17, 17);
+}
+
+.box3 {
+    background-color: #344d37;
+    border: 2px solid white;
+}
+
+.box3:hover {
+    background-color: #3Ded97;
+    color: white;
+}
+
+.bl {
+    border-left: 4px solid #333;
+}
+
+.bb {
+    border-bottom: 4px solid #333;
+}
+
+.br {
+    border-right: 4px solid #333;
+}
+
+.bt {
+    border-top: 4px solid #333;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+#GetPuzzle,
+#SolvePuzzle {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(135deg, #04090e, #2d6898);
+    padding: 15px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+#GetPuzzle:hover,
+#SolvePuzzle:hover {
+    background: linear-gradient(135deg, #2d6898, #04090e);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
