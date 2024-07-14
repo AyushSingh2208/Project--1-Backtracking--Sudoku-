@@ -44,8 +44,6 @@ function isSafe(board,row,col,val,n ){
             return false ;
         }
         //3*3 board check 
-        // if(board[3*(row/3)+i/3][3*(col/3)+i%3]==val)
-        // return false ;
 	 let startRow = row - row % 3;
 	 let startCol = col - col % 3;
 	  for (let i = 0; i < 3; i++) {
