@@ -46,8 +46,8 @@ function isSafe(board,row,col,val,n ){
         //3*3 board check 
         // if(board[3*(row/3)+i/3][3*(col/3)+i%3]==val)
         // return false ;
-		let startRow = row - row % 3;
-	    let startCol = col - col % 3;
+	 let startRow = row - row % 3;
+	 let startCol = col - col % 3;
 	  for (let i = 0; i < 3; i++) {
 		for (let j = 0; j < 3; j++) {
 			if (board[i + startRow][j + startCol] == val) {
@@ -78,7 +78,7 @@ function SudokuSolver(board,row,col,n)
     }
     for (let val = 1; val <= 9; val++)
     {
-        // check if val cann be filled{
+        // check if val can be filled{
         if (isSafe(board, row, col, val,n))
         {
             board[row][col] = val;
